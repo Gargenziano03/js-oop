@@ -40,9 +40,17 @@ class Veicolo {
     getInformation() {
         return `${marca}, ${anno}, ${colore}, ${porte}, ${carburante}`
     }
+    //metodo per ottenere l'età
+    getcalculateage(){
+        return 2024 - this.anno;
+    }
+
 }
 //informazioni sul veicolo
 const veicolo = new Veicolo('Fiat', 2019, 'blue')
 //stampare le informazioni in console
 console.log(veicolo);
+const eta = veicolo.getcalculateage()
+console.log('questo veicolo ha:', eta, 'anni');
+
 
