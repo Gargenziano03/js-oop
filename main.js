@@ -20,3 +20,20 @@ In questo bonus, dovrai estendere la classe "Veicolo" con una nuova classe chiam
 Successivamente:
 Istanziamo una nuova Automobile (Opel, 2020, nera, con 4 porte, a benzina)
 Stampiamo il numero di porte e il tipo di carburante.*/
+
+// creo una classe veicolo
+
+class Veicolo {
+    marca;
+    anno;
+    colore;
+    porte;
+    carburante;
+    constructor(marca, anno, colore, porte, carburante){
+        this.marca = marca;
+        this.anno = anno;
+        this.colore = colore;
+        this.porte = porte;
+        this.carburante = carburante;
+    }
+}
