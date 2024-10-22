@@ -29,11 +29,20 @@ class Veicolo {
     colore;
     porte;
     carburante;
-    constructor(marca, anno, colore, porte, carburante){
+    constructor(marca, anno, colore, porte, carburante) {
         this.marca = marca;
         this.anno = anno;
         this.colore = colore;
         this.porte = porte;
         this.carburante = carburante;
     }
+    //metodo per ottenere informazioni
+    getInformation() {
+        return `${marca}, ${anno}, ${colore}, ${porte}, ${carburante}`
+    }
 }
+//informazioni sul veicolo
+const veicolo = new Veicolo('Fiat', 2019, 'blue')
+//stampare le informazioni in console
+console.log(veicolo);
+
